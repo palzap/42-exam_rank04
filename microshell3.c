@@ -77,7 +77,7 @@ int main(int ac, char **av, char **env)
         {
             close(temp);
             close(fd[1]);
-            temp = dup(fd[0]);
+            temp = fd[0];
         }
     }
     close(temp);

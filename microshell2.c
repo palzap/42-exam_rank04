@@ -6,7 +6,7 @@
 /*   By: pealexan <pealexan@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/21 18:36:11 by pealexan          #+#    #+#             */
-/*   Updated: 2023/05/21 18:45:47 by pealexan         ###   ########.fr       */
+/*   Updated: 2023/05/22 12:38:47 by pealexan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,7 +88,7 @@ int main(int ac, char **av, char **env)
             {
                 close(temp);
                 close(fd[1]);
-                temp = dup(fd[0]);
+                temp = fd[0];
             }
         }
     }
