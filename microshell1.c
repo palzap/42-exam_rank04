@@ -61,6 +61,7 @@ int main(int argc, char **argv, char **env)
             }
             else
             {
+                close(temp);
                 while (waitpid(-1, 0, WUNTRACED) != -1)
                     ;
                 temp = dup(0);

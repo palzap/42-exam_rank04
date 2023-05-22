@@ -49,6 +49,7 @@ int main(int ac, char **av, char **env)
             }
             else
             {
+                close(temp);
                 while (waitpid(-1, 0, WUNTRACED) != -1)
                     ;
                 temp = dup(0);
